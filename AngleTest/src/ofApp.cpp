@@ -11,8 +11,7 @@ void ofApp::setup(){
 //--------------------------------------------------------------
 void ofApp::update(){
     
-    //color.setHsb((atan2(mousePosition.y, -mousePosition.x)+pi)/(2*pi)*255.0, 255, 255);
-    color.setHsb(ofGetElapsedTimeMillis()/10%256, 255, 255);
+    color.setHsb((atan2(mousePosition.y, -mousePosition.x)+pi)/(2*pi)*255.0, 255, 255);
     
     angleValue = (atan2(mousePosition.y, -mousePosition.x)+pi)/(2*pi)*360;
     if (!isSpacePressed){
